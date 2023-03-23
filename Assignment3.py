@@ -9,7 +9,7 @@ class TestTriangle(unittest.TestCase):
         self.assertEqual(triangle_type(1, 1, 1), "Equilateral")
 
         # Equilateral triangle with largest possible values
-        self.assertEqual(triangle_type(100, 100, 100), "Equilateral")
+        self.assertEqual(triangle_type(199, 199, 199), "Equilateral")
 
         # Equilateral triangle with random values
         self.assertEqual(triangle_type(8, 8, 8), "Equilateral")
@@ -46,13 +46,13 @@ class TestTriangle(unittest.TestCase):
 
     def test_invalid_input(self):
         # Invalid input with a side having a value less than 1
-        self.assertEqual(triangle_type(-1, 2, 3), "Value of a is not in the range of permitted values.")
+        self.assertEqual(triangle_type(-1, 2, 3), "Value of a, b, or c is not in the range of permitted values.")
 
         # Invalid input with a side having a value greater than 100
-        self.assertEqual(triangle_type(200, 2, 3), "Value of a is not in the range of permitted values.")
+        self.assertEqual(triangle_type(200, 2, 3), "Value of a, b, or c is not in the range of permitted values.")
 
         # Invalid input with all sides having the same invalid value
-        self.assertEqual(triangle_type(-5, -5, -5), "Value of a is not in the range of permitted values.")
+        self.assertEqual(triangle_type(-5, -5, -5), "Value of a, b, or c is not in the range of permitted values.")
 
 
 if __name__ == '__main__':
