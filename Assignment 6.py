@@ -33,7 +33,7 @@ working_checkbox.click()
 
 # Select a country from the drop-down list
 country_dropdown = Select(driver.find_element(By.NAME, "country"))
-country_dropdown.select_by_value("Estonia")
+country_dropdown.select_by_value("UAE")
 
 # Select multiple skills from the multi-select drop-down list
 skills_dropdown = Select(driver.find_element(By.ID, "skillsmultiple"))
